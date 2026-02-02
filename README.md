@@ -12,8 +12,6 @@
 
 **Ostrakon-VL** is the first open-source Multimodal Large Language Model (MLLM) specifically designed for **Food-Service and Retail Store (FSRS)** scenarios. Built on **Qwen3-VL-8B**, it delivers state-of-the-art performance in real-world retail perception, compliance, and decision-making tasks — outperforming even much larger general-purpose models like Qwen3-VL-235B.
 
-We also release **ShopBench**, the first public benchmark for FSRS.
-
 > 🔥 **Key Highlights**
 >
 > - **60.1 average score** on ShopBench — **+4.8** over Qwen3-VL-8B and **+0.7** over Qwen3-VL-235B  
@@ -45,9 +43,9 @@ We also release **ShopBench**, the first public benchmark for FSRS.
 - **Reduced Language Bias**: Employs diagnostic metrics like **Visual Necessity Rate (VNR)** and **Vision-Induced Failure (VIF)** to ensure questions truly require visual understanding, not just language priors.
 - **Domain Distinctiveness**: t-SNE visualization shows ShopBench occupies a **distinct region** in the visual embedding space compared to existing benchmarks (e.g., MMBench, OCRBench).
 
-👉 **Download ShopBench**: release soon
-
 ShopBench enables fair, interpretable, and actionable comparison of MLLMs in realistic FSRS workflows — from storefront compliance checks to kitchen hygiene audits.
+
+Due to legal reasons, the open-sourcing of ShopBench has been postponed.
 
 ---
 
