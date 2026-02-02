@@ -1,8 +1,8 @@
 # Ostrakon-VL: Towards Domain-Expert MLLM for Food-Service and Retail Stores
 
 
-[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Model-blue)](https://huggingface.co/Ostrakon-VL)
-[![Paper](https://img.shields.io/badge/arXiv-Paper-red)](https://arxiv.org/abs/xxxx.xxxxx)
+[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Model-blue)](https://huggingface.co/Ostrakon/Ostrakon-VL-8B)
+[![Paper](https://img.shields.io/badge/arXiv-Paper-red)](https://arxiv.org/abs/2601.21342)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
 
 ![Ostrakon-VL Framework Overview](./imgs/main.jpg)
@@ -24,7 +24,7 @@ We also release **ShopBench**, the first public benchmark for FSRS.
 
 ## 📦 What’s Included
 
-- ✅ **[Ostrakon-VL]((https://huggingface.co/Ostrakon-VL/Ostrakon-VL-8B))**: A fine-tuned 8B dense MLLM for FSRS
+- ✅ **[Ostrakon-VL](https://huggingface.co/Ostrakon/Ostrakon-VL-8B)**: A fine-tuned 8B dense MLLM for FSRS
 - 🧪 **ShopBench**: The first public benchmark for FSRS, featuring:
   - **Scenarios**: ShopFront, ShopInterior, Kitchen
   - **Input Types**: Single image, multi-image, video
@@ -79,20 +79,6 @@ This strategy enables robust, auditable, and rule-compliant reasoning in complex
 
 ---
 
-
-## 📚 Citation
-
-If you find Ostrakon-VL or ShopBench useful in your research, please cite our paper:
-
-    @article{Ostrakon2026Ostrakonvl,
-      title={Ostrakon-VL: Towards Domain-Expert MLLM for Food-Service and Retail Stores},
-      author={Ostrakon Team},
-      journal={arXiv preprint arXiv:xxxx.xxxxx},
-      year={2026}
-    }
-
----
-
 ## 🚀 Quick Start
 
 Install dependencies and run inference with just a few lines of code:
@@ -109,11 +95,11 @@ from PIL import Image
 
 # Load Ostrakon-VL
 model = Qwen3VLForConditionalGeneration.from_pretrained(
-    "Ostrakon-VL/Ostrakon-VL-8B",
+    "Ostrakon/Ostrakon-VL-8B",
     dtype="bfloat16",
     device_map="auto",
 )
-processor = AutoProcessor.from_pretrained("Ostrakon-VL/Ostrakon-VL-8B")
+processor = AutoProcessor.from_pretrained("Ostrakon/Ostrakon-VL-8B")
 
 def process_local_image(image_path):
     image = Image.open(image_path)
@@ -158,7 +144,21 @@ output_text = processor.batch_decode(
 print(output_text)
 ```
 
+## 📚 Citation
 
+If you find Ostrakon-VL or ShopBench useful in your research, please cite our paper:
+
+    @misc{shen2026ostrakonvldomainexpertmllmfoodservice,
+      title={Ostrakon-VL: Towards Domain-Expert MLLM for Food-Service and Retail Stores}, 
+      author={Zhiyong Shen and Gongpeng Zhao and Jun Zhou and Li Yu and Guandong Kou and Jichen Li and Chuanlei Dong and Zuncheng Li and Kaimao Li and Bingkun Wei and Shicheng Hu and Wei Xia and Wenguo Duan},
+      year={2026},
+      eprint={2601.21342},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2601.21342},
+    }
+
+---
 
 ## 🤝 Contributing & License
 
