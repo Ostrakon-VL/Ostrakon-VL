@@ -16,7 +16,7 @@
 >
 > - **60.1 average score** on ShopBench — **+4.8** over Qwen3-VL-8B and **+0.7** over Qwen3-VL-235B  
 > - **ShopBench**: First public benchmark for FSRS, with multi-format inputs and diagnostic metrics  
-> - Model weights and ShopBench are open-sourced
+> - Model weights are open-sourced
 
 ---
 
