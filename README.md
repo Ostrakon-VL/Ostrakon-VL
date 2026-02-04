@@ -2,6 +2,7 @@
 
 
 [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Model-blue)](https://huggingface.co/Ostrakon/Ostrakon-VL-8B)
+[![ModelScope](https://img.shields.io/badge/ModelScope-Model-green)](https://www.modelscope.cn/models/Ostrakon/Ostrakon-VL-8B)
 [![Paper](https://img.shields.io/badge/arXiv-Paper-red)](https://arxiv.org/abs/2601.21342)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
 
@@ -146,14 +147,11 @@ print(output_text)
 
 If you find Ostrakon-VL or ShopBench useful in your research, please cite our paper:
 
-    @misc{shen2026ostrakonvldomainexpertmllmfoodservice,
-      title={Ostrakon-VL: Towards Domain-Expert MLLM for Food-Service and Retail Stores}, 
-      author={Zhiyong Shen and Gongpeng Zhao and Jun Zhou and Li Yu and Guandong Kou and Jichen Li and Chuanlei Dong and Zuncheng Li and Kaimao Li and Bingkun Wei and Shicheng Hu and Wei Xia and Wenguo Duan},
-      year={2026},
-      eprint={2601.21342},
-      archivePrefix={arXiv},
-      primaryClass={cs.AI},
-      url={https://arxiv.org/abs/2601.21342},
+    @article{shen2026ostrakon,
+      title={Ostrakon-VL: Towards Domain-Expert MLLM for Food-Service and Retail Stores},
+      author={Shen, Zhiyong and Zhao, Gongpeng and Zhou, Jun and Yu, Li and Kou, Guandong and Li, Jichen and Dong, Chuanlei and Li, Zuncheng and Li, Kaimao and Wei, Bingkun and others},
+      journal={arXiv preprint arXiv:2601.21342},
+      year={2026}
     }
 
 ---
