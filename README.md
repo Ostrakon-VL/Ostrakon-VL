@@ -11,11 +11,11 @@
 
 ## Introduction
 
-**Ostrakon-VL** is the first open-source Multimodal Large Language Model (MLLM) specifically designed for **Food-Service and Retail Store (FSRS)** scenarios. Built on **Qwen3-VL-8B**, it delivers state-of-the-art performance in real-world retail perception, compliance, and decision-making tasks — outperforming even much larger general-purpose models like Qwen3-VL-235B.
+**Ostrakon-VL** is the first open-source Multimodal Large Language Model (MLLM) specifically designed for **Food-Service and Retail Store (FSRS)** scenarios. It delivers state-of-the-art performance in real-world retail perception, compliance, and decision-making tasks — outperforming even much larger general-purpose models like Qwen3-VL-235B.
 
 > 🔥 **Key Highlights**
 >
-> - **60.1 average score** on ShopBench — **+4.8** over Qwen3-VL-8B and **+0.7** over Qwen3-VL-235B  
+> - **60.5 average score** on ShopBench (Ostrakon-VL-30B-A3B) — outperforming Qwen3-VL-235B by **+1.1**  
 > - **ShopBench**: First public benchmark for FSRS, with multi-format inputs and diagnostic metrics  
 > - Model weights are open-sourced
 
