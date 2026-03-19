@@ -64,14 +64,13 @@ Due to legal reasons, the open-sourcing of ShopBench has been postponed.
 
 ![](./imgs/shopbench_result.jpg)
 
-> Ostrakon-VL achieves 60.1 on ShopBench, outperforming Qwen3-VL-235B (59.4) and its base model Qwen3-VL-8B (55.3).
+> Our Ostrakon-VL models achieve strong performance on ShopBench. Ostrakon-VL-8B reaches an average score of 60.1, showing competitive results among open-source models of similar scale, while Ostrakon-VL-30B-A3B further improves to 60.5 and performs particularly well on ShopFront (65.3) and Video (57.3), demonstrating strong understanding of e-commerce scenarios.
 
 ### General Benchmarks
 
 ![](./imgs/public_result.jpg)
 
-While specialized for FSRS, Ostrakon-VL maintains reasonable general multimodal ability (e.g., 88.5 on Chinese-OCRBench), demonstrating effective **domain adaptation without catastrophic forgetting**.
-
+While specialized for FSRS, On representative multimodal benchmarks, Ostrakon-VL shows competitive overall performance across a wide range of tasks. In particular, Ostrakon-VL-30B-A3B achieves strong results on MMBench-EN_DEV (86.7) and AI2D_TEST (86.9), while maintaining solid performance across OCR, math, and Chinese-language benchmarks, demonstrating its broad multimodal capabilities.
 ---
 
 ## 🧠 Training Strategy
