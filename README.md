@@ -1,8 +1,8 @@
 # Ostrakon-VL: Towards Domain-Expert MLLM for Food-Service and Retail Stores
 
 
-[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Model-blue)](https://huggingface.co/Ostrakon/Ostrakon-VL-8B)
-[![ModelScope](https://img.shields.io/badge/ModelScope-Model-green)](https://www.modelscope.cn/models/Ostrakon/Ostrakon-VL-8B)
+[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Collection-blue)](https://huggingface.co/collections/Ostrakon/ostrakon-vl)
+[![ModelScope](https://img.shields.io/badge/ModelScope-Collection-green)](https://modelscope.cn/collections/Ostrakon/Ostrakon-VL)
 [![Paper](https://img.shields.io/badge/arXiv-Paper-red)](https://arxiv.org/abs/2601.21342)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
 
@@ -23,7 +23,7 @@
 
 ## 📦 What’s Included
 
-- ✅ **[Ostrakon-VL](https://huggingface.co/Ostrakon/Ostrakon-VL-8B)**: A fine-tuned 8B dense MLLM for FSRS
+- ✅ **[Ostrakon-VL Models](https://huggingface.co/collections/Ostrakon/ostrakon-vl)**: Fine-tuned MLLMs for FSRS, including 8B and 30B variants (ModelScope: https://modelscope.cn/collections/Ostrakon/Ostrakon-VL)
 - 🧪 **ShopBench**: The first public benchmark for FSRS, featuring:
   - **Scenarios**: ShopFront, ShopInterior, Kitchen
   - **Input Types**: Single image, multi-image, video
@@ -49,6 +49,14 @@ ShopBench enables fair, interpretable, and actionable comparison of MLLMs in rea
 Due to legal reasons, the open-sourcing of ShopBench has been postponed.
 
 ---
+
+## 📝 News
+
+### 2026-03-19
+- 2025.11.27: Added Ostrakon-VL-30B-A3B
+
+---
+
 
 ## 📊 Evaluation Results
 
@@ -92,13 +100,12 @@ pip install torch transformers accelerate
 from transformers import Qwen3VLForConditionalGeneration, AutoProcessor
 from PIL import Image
 
-# Load Ostrakon-VL
 model = Qwen3VLForConditionalGeneration.from_pretrained(
-    "Ostrakon/Ostrakon-VL-8B",
+    "Ostrakon/Ostrakon-VL-30B-A3B",
     dtype="bfloat16",
     device_map="auto",
 )
-processor = AutoProcessor.from_pretrained("Ostrakon/Ostrakon-VL-8B")
+processor = AutoProcessor.from_pretrained("Ostrakon/Ostrakon-VL-30B-A3B")
 
 def process_local_image(image_path):
     image = Image.open(image_path)
